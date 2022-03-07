@@ -2,20 +2,18 @@ import React from "react";
 
 class Header extends React.Component{
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-
-        }
-
-    }
-
     render() {
 
         return(
             <header>
-
+                <nav className="header-nav">
+                    <ul>
+                        <li onClick={ () => this.props.setPage('login') }>Login</li>
+                        <li onClick={ () => this.props.setPage('register') }>Register</li>
+                        <li onClick={ () => this.props.setPage('map') }>Map</li>
+                        <li onClick={ () => this.props.setPage('profile') }>Profile</li>
+                    </ul>
+                </nav>
             </header>
         )
 

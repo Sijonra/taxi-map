@@ -14,7 +14,6 @@ const PAGES = {
     header: Header,
 }
 
-
 class App extends React.Component{
 
     constructor(props) {
@@ -24,14 +23,14 @@ class App extends React.Component{
         }
     }
 
-    setPage(page){
+    setPage = (page) => {
         this.setState({
             page: page,
-        })
+        });
     }
 
-    alert(){
-        console.log('jopa');
+    alert(message){
+        alert(message);
     }
 
     render() {
@@ -39,19 +38,9 @@ class App extends React.Component{
         const Page = PAGES[page];
         return(
             <div>
-                <header>
-                    <Header />
-                    <nav className="header-nav">
-                        <ul>
-                            <li onClick={ () => this.setPage('login') } >Login</li>
-                            <li onClick={ () => this.setPage('register') } >Register</li>
-                            <li onClick={ () => this.setPage('map') } >Map</li>
-                            <li onClick={ () => this.setPage('profile') } >Profile</li>
-                        </ul>
-                    </nav>
-                </header>
+                <Header setPage={this.setPage} />
                 <section>
-                    {<Page setPage={() => this.setPage('')} />}
+                    <Page setPage={this.setPage} />
                 </section>
 
             </div>
