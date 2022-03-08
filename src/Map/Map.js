@@ -1,9 +1,15 @@
 import Header from "../Header/Header";
+import React from "react";
 
-function Map(){
-    return(
-        <h1>Map</h1>
-    )
+class Map extends React.Component{
+    render() {
+        return (
+            <>
+                <Header setPage={this.props.setPage}/>
+                <h1>Map</h1>
+            </>
+        );
+    }
 }
 
 export default Map;

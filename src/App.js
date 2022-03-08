@@ -29,16 +29,12 @@ class App extends React.Component{
         });
     }
 
-    alert(message){
-        alert(message);
-    }
-
     render() {
         const page = this.state.page;
         const Page = PAGES[page];
         return(
             <div>
-                <Header setPage={this.setPage} />
+                {/*<Header setPage={this.setPage} />   */}
                 <section>
                     <Page setPage={this.setPage} />
                 </section>
