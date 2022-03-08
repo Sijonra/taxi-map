@@ -1,0 +1,5 @@
+.section-map{
+    height: 100vh;
+    background: url('./images.jpg') 100% no-repeat;
+    background-size: cover;
+}

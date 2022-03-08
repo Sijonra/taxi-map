@@ -20,7 +20,6 @@
 }
 
 .form-reg-link{
-    cursor: pointer;
     text-align: center;
     font-size: 16px;
     text-align: center;
@@ -28,5 +27,6 @@
 }
 
 .form-reg-link span{
+    cursor: pointer;
     color: #FDBF5A;
 }

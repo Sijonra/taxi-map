@@ -30,7 +30,7 @@ class LogForm extends React.Component{
                             <input name = "password" type = "password" className="log-form-input input-primary" placeholder="*************"></input>
                         </label>
                         <input type = "submit" value = "Войти" className="submit-primary log-form-submit"></input>
-                        <p className="form-reg-link" >Новый пользователь? <span>Регистрация</span> </p>
+                        <p className="form-reg-link" >Новый пользователь? <span onClick={()=> this.props.setPage('register')}>Регистрация</span> </p>
                     </form>
                 </div>
 
